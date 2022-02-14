@@ -148,18 +148,18 @@ mariasoriano ttys000  Feb 14 19:42
 
 15. List all files with the extension .txt in lorem folder
 
-(base) mariasoriano@MacBook-Pro-de-Maria lorem % find . -type f -name "*.txt"
-./at.txt
-./lorem.txt
-./sed.txt
-(base) mariasoriano@MacBook-Pro-de-Maria lorem % 
+(base) mariasoriano@MacBook-Pro-de-Maria lab-bash % find . -type f -name "lorem*" | wc -l
+       3
+(base) mariasoriano@MacBook-Pro-de-Maria lab-bash % 
+
 
 
 
 16. Count the rows in sed.txt file from the lorem folder. Look to concatenate cat and wc with the pipe |
 
-(base) mariasoriano@MacBook-Pro-de-Maria lorem % wc -l sed.txt
-       9 sed.txt
+(base) mariasoriano@MacBook-Pro-de-Maria lorem % cat sed.txt | wc -l
+       9
+
 
 
 17. Count the files which start with lorem in all directories
